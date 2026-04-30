@@ -13,8 +13,8 @@ const Contact = () => {
             <div className="contact-top-bg">
                 <div className="container">
                     <div className="breadcrumb">
-                        <a href="/" className="back-link">&lt; Contact</a>
-                        <div className="path"><a href="/">Home</a> &gt; <span>Contact</span></div>
+                        <a href="#/" className="back-link">&lt; Contact</a>
+                        <div className="path"><a href="#/">Home</a> &gt; <span>Contact</span></div>
                     </div>
                 </div>
 

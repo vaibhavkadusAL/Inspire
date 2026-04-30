@@ -20,13 +20,13 @@ const Navbar = () => {
         <div className={`nav-overlay ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
 
         <ul className={`nav-links ${isMobileMenuOpen ? 'mobile-active' : ''}`}>
-          <li><a href="/" onClick={toggleMenu}>Home</a></li>
+          <li><a href="#/" onClick={toggleMenu}>Home</a></li>
           <li className="dropdown">
-            <a href="/services" onClick={toggleMenu}>Services <span className="arrow">▼</span></a>
+            <a href="#/services" onClick={toggleMenu}>Services <span className="arrow">▼</span></a>
           </li>
-          <li><a href="/#freezone" onClick={toggleMenu}>Free Zone</a></li>
-          <li><a href="/#howitworks" onClick={toggleMenu}>How It Works</a></li>
-          <li><a href="/contact" onClick={toggleMenu}>Contact</a></li>
+          <li><a href="#/freezone" onClick={toggleMenu}>Free Zone</a></li>
+          <li><a href="#/howitworks" onClick={toggleMenu}>How It Works</a></li>
+          <li><a href="#/contact" onClick={toggleMenu}>Contact</a></li>
 
           <div className="nav-actions mobile-only">
             <button className="btn btn-primary w-100">Schedule Consultation</button>
