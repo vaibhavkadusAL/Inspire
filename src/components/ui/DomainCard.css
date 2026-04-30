@@ -1,0 +1,45 @@
+.domain-card {
+  background: linear-gradient(135deg, #F0F4FC 0%, #FDF2E2 100%);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 20px;
+  padding: 30px;
+  transition: var(--transition);
+}
+
+.domain-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  border-color: #CBD5E1;
+}
+
+.domain-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.domain-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.domain-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.domain-card li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+}
+
+.domain-card li::before {
+  content: '•';
+  color: var(--text-muted);
+  margin-right: 8px;
+}
