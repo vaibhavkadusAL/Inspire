@@ -30,20 +30,20 @@ const Services = () => {
             'Personalized business structure'
         ],
         'Government Services': [
-            'Visa and residency processing',
-            'PRO services and approvals',
-            'Trademark registration',
-            'Corporate tax & VAT support'
+            'Visa and residency processing For Investors, Employees, and partners',
+            'PRO services for approvals, documentation and government liaison',
+            'Trademark registration and legal support to protect your business identity',
+            'End-to-End handling ofCorporate tax, VAT and shares resources'
         ],
         'Funding & Project Management': [
-            'Funding & SPV structuring',
-            'Project management',
-            'Business growth strategy'
+            'Structuring SPVs and providing finance, funding solutions and bankuing services',
+            'End-to-end project management and Advisory services',
+            'Strategic guidanence to support business growth, investment and scalability'
         ],
         'Marketing & Events': [
-            'Marketing planning',
-            'Digital marketing',
-            'Event management'
+            'Strategic marketing planning and channel partnership development',
+            'Digital marketing, analytics, ITC and Technology solutions for business growth',
+            'Management of Conferences, exhibitions and educational initiatives'
         ]
     };
 

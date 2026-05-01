@@ -13,8 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container navbar-content">
         <div className="logo">
-          <img src={symbolImage} alt="Inspire Logo" width="40" height="40" />
-          <span className="logo-text">INSPIRE</span>
+          <img src={symbolImage} alt="Inspire Logo" width="70" height="70" />
         </div>
 
         <div className={`nav-overlay ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMenu}></div>
