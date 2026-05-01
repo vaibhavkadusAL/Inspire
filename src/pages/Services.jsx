@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import CtaSection from '../components/sections/CtaSection';
@@ -14,6 +14,11 @@ import mainSetupImage from '../assets/images/cfc11b75eb8b1a0d7393d00755df713549b
 import servicesCtaBg from '../assets/images/Frame 2147207863.jpg.jpeg';
 
 const Services = () => {
+    // Ensure the page always loads from the top
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const [activeTab, setActiveTab] = useState('Business Setup');
 
     const tabs = [
