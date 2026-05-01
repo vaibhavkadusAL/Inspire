@@ -26,7 +26,7 @@ const Hero = () => {
 
           <div className="hero-btns">
             <a
-              href="https://wa.me/971505203821"
+              href="https://wa.me/971505103821"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
@@ -34,7 +34,7 @@ const Hero = () => {
               Book Appointment <span className="arrow-right">→</span>
             </a>
             <a
-              href="tel:+971505203821"
+              href="tel:+971505103821"
               className="btn btn-outline call-btn"
             >
               <span className="phone-icon">📞</span> Call Now: +971 50 520 3821

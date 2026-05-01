@@ -35,7 +35,7 @@ const Contact = () => {
 
                                 <div className="direct-btns">
                                     <a
-                                        href="https://wa.me/971505203821"
+                                        href="https://wa.me/971505103821"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn dark-btn"
@@ -45,7 +45,7 @@ const Contact = () => {
                                     </a>
 
                                     <a
-                                        href="tel:+971505203821"
+                                        href="tel:+971505103821"
                                         className="btn call-btn-white"
                                         style={{ textDecoration: 'none', display: 'inline-block' }}
                                     >
