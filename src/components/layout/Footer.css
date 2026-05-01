@@ -9,7 +9,7 @@
   justify-content: space-between;
   margin-bottom: 60px;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 80px;
 }
 
 .brand-col {
@@ -120,16 +120,39 @@
 @media (max-width: 768px) {
   .footer-top {
     flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .brand-col {
+    flex: auto;
+  }
+
+  .footer-logo {
+    justify-content: center;
   }
   
   .footer-links-container {
     flex-direction: column;
     gap: 30px;
   }
+
+  .footer-col ul {
+    align-items: center;
+  }
+
+  .contact-info li {
+    justify-content: center;
+    text-align: center;
+  }
   
   .footer-bottom {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
   }
 }

@@ -41,8 +41,8 @@ const Footer = () => {
             <div className="footer-col">
               <h4>Contact Us</h4>
               <ul className="contact-info">
-                <li><span className="icon">✉️</span> info@inspire.ae</li>
-                <li><span className="icon">📞</span> +971 50 520 3821</li>
+                <li><span className="icon">✉️</span> <a href="mailto:Info@alilhammanagement.com" style={{color: 'inherit', textDecoration: 'none'}}>Info@alilhammanagement.com</a></li>
+                <li><span className="icon">📞</span> +971505203821</li>
                 <li><span className="icon">📍</span> Business Bay, Dubai,<br />United Arab Emirates</li>
               </ul>
             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="social-links">
             <a href="#">f</a>
             <a href="#">X</a>
-            <a href="#">in</a>
+            <a href="https://www.linkedin.com/company/alilhammanagement/" target="_blank" rel="noopener noreferrer">in</a>
             <a href="#">ig</a>
             <a href="#">yt</a>
           </div>

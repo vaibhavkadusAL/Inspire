@@ -7,8 +7,14 @@
 /* Header Section */
 .services-header {
     background: linear-gradient(180deg, #EBE1D2 0%, #E3ECF6 100%);
-    padding: 60px 0 140px;
+    padding: 60px 20px 140px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .services-header {
+        padding: 40px 15px 80px;
+    }
 }
 
 .breadcrumb {
@@ -45,6 +51,15 @@
     font-weight: 500;
 }
 
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+    .header-content p {
+        font-size: 1rem;
+    }
+}
+
 .services-content {
     padding: 60px 20px;
     background: #F8FAFC;
@@ -75,7 +90,7 @@
 
 /* Main Box */
 .tab-content-box {
-    background: linear-gradient(135deg, #E2D9C8, #E8EAEE);
+    background: linear-gradient(135deg, #DFCCA8 0%, #E6E1DC 45%, #E6EDF9 100%);
     border-radius: 30px;
     padding: 50px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
@@ -88,7 +103,7 @@
 .tab-main-info {
     display: flex;
     gap: 40px;
-    height: 420px; /* Lock height so section never jumps */
+    min-height: 350px;
 }
 
 /* Left */
@@ -100,6 +115,15 @@
 
 .tab-text-side h2 {
     font-size: 2.3rem;
+    color: #1A1A2E;
+    font-weight: 700;
+}
+
+.tab-text-side h3 {
+    font-size: 1.25rem;
+    color: #1A1A2E;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 .tab-text-side ul {
@@ -117,8 +141,8 @@
 .we-provide-text {
     font-size: 0.95rem;
     color: #475569;
-    margin-top: auto; /* Push to the exact same bottom position always */
-    margin-bottom: 15px;
+    margin-top: auto; 
+    margin-bottom: 70px; /* Space for overlay cards */
     font-weight: 500;
 }
 
@@ -128,23 +152,24 @@
     position: relative;
     border-radius: 25px;
     overflow: hidden;
-    height: 100%; /* Fill the fixed 420px height exactly */
+    min-height: 250px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .tab-image-side img {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
 }
 
 /* Overlay Cards */
 .overlay-cards {
-    position: absolute;
-    top: 100%;
-    transform: translateY(-50px);
-    left: 50px;
-    right: 50px;
+    position: relative;
+    margin-top: -60px; /* Overlap the image vertically */
+    z-index: 10;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
@@ -160,12 +185,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    justify-content: flex-start;
+    gap: 15px;
+    height: 100%;
 }
 
 .overlay-card img {
-    width: 28px;
+    width: 32px;
+    height: 32px;
     object-fit: contain;
+    object-position: left center;
+    flex-shrink: 0;
 }
 
 .overlay-card p {
@@ -183,14 +213,45 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .overlay-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -30px;
+    }
+}
+
 @media (max-width: 768px) {
     .tab-main-info {
         flex-direction: column;
+        min-height: auto;
     }
-
-    .overlay-cards {
-        position: static;
+    .we-provide-text {
+        margin-bottom: 20px;
+    }
+    .tab-content-box {
+        padding: 30px 20px;
+    }
+    .tabs-container {
+        flex-wrap: wrap;
+        border-radius: 20px;
+        justify-content: center;
+    }
+    .tab-btn {
         width: 100%;
-        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .overlay-cards {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin-top: -30px;
+    }
+    .tab-image-side {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-cards {
+        grid-template-columns: 1fr;
     }
 }

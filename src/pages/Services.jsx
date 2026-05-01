@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import CtaSection from '../components/sections/CtaSection';
+import ProcessSection from '../components/sections/ProcessSection';
 import './Services.css';
 
 // Images
@@ -10,6 +11,7 @@ import iconUae from '../assets/images/united-arab-emirates-dirham-icon 1.png';
 import iconSa from '../assets/images/south-africa-flag-round-circle-icon 1.png';
 import iconTimezone from '../assets/images/timezone-icon 1.png';
 import mainSetupImage from '../assets/images/cfc11b75eb8b1a0d7393d00755df713549bbbc83.jpg';
+import servicesCtaBg from '../assets/images/Frame 2147207863.jpg.jpeg';
 
 const Services = () => {
     const [activeTab, setActiveTab] = useState('Business Setup');
@@ -46,10 +48,10 @@ const Services = () => {
     };
 
     const serviceCards = [
-        { title: 'Business Setup in Dubai', icon: iconDubai },
-        { title: 'Business Setup in UAE', icon: iconUae },
-        { title: 'Business Setup in South Africa', icon: iconSa },
-        { title: 'Free Zone / Mainland', icon: iconTimezone }
+        { title: 'Business Setup in Dubai.', icon: iconDubai },
+        { title: 'Business Setup in UAE.', icon: iconUae },
+        { title: 'Business Setup in South Africa.', icon: iconSa },
+        { title: 'You Can Open & Operate in Free Zones or Mainland', icon: iconTimezone }
     ];
 
     return (
@@ -102,7 +104,7 @@ const Services = () => {
                                     ))}
                                 </ul>
 
-                                <p className="we-provide-text">We Provide:</p>
+                                <p className="we-provide-text">What We Provide:</p>
                             </div>
 
                             {/* RIGHT IMAGE */}
@@ -127,7 +129,15 @@ const Services = () => {
                 </div>
             </section>
 
-            <CtaSection />
+            <ProcessSection />
+
+            <CtaSection 
+                bgImage={servicesCtaBg}
+                title="Ready to Get Started?"
+                description="Let's build your business the right way, from day one."
+                primaryBtnText="Start Your Business Today"
+                showSecondaryBtn={false}
+            />
             <Footer />
         </div>
     );

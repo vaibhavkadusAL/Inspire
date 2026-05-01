@@ -33,12 +33,14 @@ const ServicesSection = () => {
         
         <div className="domains-grid">
           {domains.map((domain, index) => (
-            <DomainCard key={index} {...domain} />
+            <a href="#/services" key={index} style={{ textDecoration: 'none', color: 'inherit', display: 'block', height: '100%' }}>
+              <DomainCard {...domain} />
+            </a>
           ))}
         </div>
         
         <div className="text-center mt-50">
-          <button className="btn btn-primary dark-btn">View All Services</button>
+          <a href="#/services" className="btn btn-primary dark-btn" style={{ textDecoration: 'none', display: 'inline-block' }}>View All Services</a>
         </div>
       </div>
     </section>

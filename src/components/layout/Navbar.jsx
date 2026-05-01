@@ -25,7 +25,14 @@ const Navbar = () => {
             <a href="#/services" onClick={toggleMenu}>Services <span className="arrow">▼</span></a>
           </li>
           <li><a href="#/freezone" onClick={toggleMenu}>Free Zone</a></li>
-          <li><a href="#/howitworks" onClick={toggleMenu}>How It Works</a></li>
+          <li>
+            <a href="#/" onClick={(e) => {
+              toggleMenu();
+              setTimeout(() => {
+                document.getElementById('howitworks')?.scrollIntoView({ behavior: 'smooth' });
+              }, 100);
+            }}>How It Works</a>
+          </li>
           <li><a href="#/contact" onClick={toggleMenu}>Contact</a></li>
 
           <div className="nav-actions mobile-only">
