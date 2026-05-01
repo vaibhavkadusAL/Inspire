@@ -17,11 +17,21 @@ const CtaSection = ({
             <p>{description}</p>
             
             <div className="cta-btns">
-              <button className="btn btn-primary dark-btn">{primaryBtnText}</button>
+              <a
+                href="#/contact"
+                className="btn btn-primary dark-btn"
+                style={{ textDecoration: 'none', display: 'inline-block' }}
+              >
+                {primaryBtnText}
+              </a>
               {showSecondaryBtn && (
-                <button className="btn btn-outline call-btn-white">
+                <a
+                  href="tel:+971505203821"
+                  className="btn btn-outline call-btn-white"
+                  style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+                >
                   <span className="phone-icon">📞</span> Call Now: +971505203821
-                </button>
+                </a>
               )}
             </div>
           </div>

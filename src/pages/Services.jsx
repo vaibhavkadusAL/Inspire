@@ -3,6 +3,7 @@ import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import CtaSection from '../components/sections/CtaSection';
 import ProcessSection from '../components/sections/ProcessSection';
+import PartnersSection from '../components/sections/PartnersSection';
 import './Services.css';
 
 // Images
@@ -143,6 +144,7 @@ const Services = () => {
                 primaryBtnText="Start Your Business Today"
                 showSecondaryBtn={false}
             />
+            <PartnersSection />
             <Footer />
         </div>
     );

@@ -23,44 +23,55 @@ const ContactSection = () => {
 
                     {/* RIGHT FORM */}
                     <div className="contact-form-wrapper">
-                        <form className="contact-form">
+                        <form
+                            className="contact-form"
+                            action="https://formsubmit.co/Info@alilhammanagement.com"
+                            method="POST"
+                        >
+                            <input type="hidden" name="_subject" value="New Enquiry from Inspire Website" />
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="hidden" name="_template" value="table" />
 
                             <div className="form-group">
                                 <label>Full Name <span className="required">*</span></label>
-                                <input type="text" placeholder="Enter your full name" />
+                                <input type="text" name="full_name" placeholder="Enter your full name" required />
                             </div>
 
                             <div className="form-group">
                                 <label>Email ID <span className="required">*</span></label>
-                                <input type="email" placeholder="Enter email" />
+                                <input type="email" name="email" placeholder="Enter email" required />
                             </div>
 
                             <div className="form-group">
                                 <label>Phone Number <span className="required">*</span></label>
-                                <input type="tel" placeholder="Enter phone number" />
+                                <input type="tel" name="phone" placeholder="Enter phone number" required />
                             </div>
 
                             <div className="form-group">
                                 <label>Service Interest <span className="required">*</span></label>
                                 <div className="select-wrapper">
-                                    <select defaultValue="">
+                                    <select name="service_interest" defaultValue="" required>
                                         <option value="" disabled>Select Service</option>
-                                        <option value="setup">Business Setup</option>
-                                        <option value="government">Government Services</option>
-                                        <option value="funding">Funding & Project Management</option>
-                                        <option value="marketing">Marketing & Events</option>
+                                        <option value="Business Setup">Business Setup</option>
+                                        <option value="Government Services">Government Services</option>
+                                        <option value="Funding & Project Management">Funding &amp; Project Management</option>
+                                        <option value="Marketing & Events">Marketing &amp; Events</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div className="form-group">
                                 <label>Message</label>
-                                <textarea placeholder="Enter your message"></textarea>
+                                <textarea name="message" placeholder="Enter your message"></textarea>
+                            </div>
+
+                            <div className="consent-text">
+                                <p>I permit Inspire to collect my details and contact me via telephone, email or WhatsApp.</p>
                             </div>
 
                             <div className="form-submit">
-                                <button type="button" className="form-btn">
-                                    Submit Inquiry
+                                <button type="submit" className="form-btn">
+                                    Submit Enquiry
                                 </button>
                             </div>
 

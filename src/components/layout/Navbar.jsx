@@ -35,12 +35,24 @@ const Navbar = () => {
           <li><a href="#/contact" onClick={toggleMenu}>Contact</a></li>
 
           <div className="nav-actions mobile-only">
-            <button className="btn btn-primary w-100">Schedule Consultation</button>
+            <a
+              href="https://wa.me/971505203821"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary w-100"
+              style={{ textDecoration: 'none', display: 'inline-block', textAlign: 'center' }}
+            >Schedule Consultation</a>
           </div>
         </ul>
 
         <div className="nav-actions desktop-only">
-          <button className="btn btn-primary">Schedule Consultation</button>
+          <a
+            href="https://wa.me/971505203821"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+            style={{ textDecoration: 'none', display: 'inline-block' }}
+          >Schedule Consultation</a>
         </div>
 
         <button className="mobile-menu-btn" onClick={toggleMenu}>

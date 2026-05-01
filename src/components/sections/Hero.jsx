@@ -25,12 +25,20 @@ const Hero = () => {
           </p>
 
           <div className="hero-btns">
-            <button className="btn btn-primary">
+            <a
+              href="https://wa.me/971505203821"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
               Book Appointment <span className="arrow-right">→</span>
-            </button>
-            <button className="btn btn-outline call-btn">
+            </a>
+            <a
+              href="tel:+971505203821"
+              className="btn btn-outline call-btn"
+            >
               <span className="phone-icon">📞</span> Call Now: +971 50 520 3821
-            </button>
+            </a>
           </div>
         </div>
 

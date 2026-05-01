@@ -141,6 +141,18 @@ textarea {
     transform: translateY(-2px);
 }
 
+/* CONSENT TEXT */
+.consent-text {
+    margin-bottom: 15px;
+}
+
+.consent-text p {
+    font-size: 0.8rem;
+    color: #64748B;
+    line-height: 1.5;
+    font-style: italic;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .contact-card {

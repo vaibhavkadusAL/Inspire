@@ -34,13 +34,23 @@ const Contact = () => {
                                 </p>
 
                                 <div className="direct-btns">
-                                    <button className="btn dark-btn">
+                                    <a
+                                        href="https://wa.me/971505203821"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn dark-btn"
+                                        style={{ textDecoration: 'none', display: 'inline-block' }}
+                                    >
                                         Book Appointment
-                                    </button>
+                                    </a>
 
-                                    <button className="btn call-btn-white">
-                                        Call Now: +971 50 520 3821
-                                    </button>
+                                    <a
+                                        href="tel:+971505203821"
+                                        className="btn call-btn-white"
+                                        style={{ textDecoration: 'none', display: 'inline-block' }}
+                                    >
+                                        📞 Call Now: +971 50 520 3821
+                                    </a>
                                 </div>
 
                                 <p className="bottom-text">

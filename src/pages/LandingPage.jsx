@@ -6,6 +6,7 @@ import AboutUs from '../components/sections/AboutUs';
 import ServicesSection from '../components/sections/ServicesSection';
 import WhyChoose from '../components/sections/WhyChoose';
 import CtaSection from '../components/sections/CtaSection';
+import PartnersSection from '../components/sections/PartnersSection';
 import Footer from '../components/layout/Footer';
 import './LandingPage.css';
 
@@ -21,6 +22,7 @@ const LandingPage = () => {
         <WhyChoose />
         <CtaSection />
       </main>
+      <PartnersSection />
       <Footer />
     </div>
   );

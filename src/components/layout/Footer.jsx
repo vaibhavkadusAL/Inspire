@@ -9,8 +9,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-col brand-col">
             <div className="footer-logo">
-              <img src={symbolImage} alt="Inspire Logo" width="40" height="40" />
-              <span className="logo-text">INSPIRE</span>
+              <img src={symbolImage} alt="Inspire Logo" width="100" height="100" />
             </div>
             <p className="tagline">Your trusted partner for end-to-end business setup solutions in the UAE.</p>
           </div>
@@ -30,11 +29,9 @@ const Footer = () => {
               <h4>Services</h4>
               <ul>
                 <li><a href="#">Business Setup</a></li>
-                <li><a href="#">B2B Marketing</a></li>
-                <li><a href="#">Visas & Residency</a></li>
-                <li><a href="#">Banking</a></li>
-                <li><a href="#">Tax & Accounting</a></li>
-                <li><a href="#">PRO Services</a></li>
+                <li><a href="#">Government Services</a></li>
+                <li><a href="#">Funding & Project Management</a></li>
+                <li><a href="#">Marketing & Events</a></li>
               </ul>
             </div>
 
@@ -50,13 +47,20 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>Copyright © 2024 Inspire. All Rights Reserved.</p>
+          <p>Copyright © 2026 Inspire. All Rights Reserved.</p>
           <div className="social-links">
-            <a href="#">f</a>
-            <a href="#">X</a>
-            <a href="https://www.linkedin.com/company/alilhammanagement/" target="_blank" rel="noopener noreferrer">in</a>
-            <a href="#">ig</a>
-            <a href="#">yt</a>
+            <a
+              href="https://wa.me/971505203821"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="WhatsApp"
+            >W</a>
+            <a
+              href="https://www.linkedin.com/company/alilhammanagement/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >in</a>
           </div>
         </div>
       </div>
