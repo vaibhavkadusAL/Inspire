@@ -52,6 +52,7 @@
   color: var(--primary);
   font-weight: 700;
   line-height: 1.2;
+  font-family: 'Philosopher', serif;
 }
 
 .hero-text-area p {
@@ -59,6 +60,7 @@
   color: var(--text-main);
   margin-bottom: 2.5rem;
   line-height: 1.6;
+  font-family: 'Manrope', sans-serif;
 }
 
 .hero-btns {
