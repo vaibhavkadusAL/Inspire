@@ -137,6 +137,10 @@ margin-bottom: 10px;
     border-radius: 30px;
   }
   .process-path-container {
+    height: auto;
+  }
+  
+  .path-svg {
     display: none;
   }
 
@@ -148,7 +152,9 @@ margin-bottom: 10px;
   }
 
   .step {
-    position: static;
+    position: relative;
     transform: none;
+    left: auto;
+    top: auto;
   }
 }
