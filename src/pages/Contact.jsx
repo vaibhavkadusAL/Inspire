@@ -2,12 +2,19 @@ import React from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ContactSection from '../components/sections/ContactSection';
+import SEO from '../components/seo/SEO';
 import contactDirectImg from '../assets/images/contact.png';
 import './Contact.css';
 
 const Contact = () => {
     return (
         <div className="contact-page">
+            <SEO
+                title="Contact Inspire | Book a Business Consultation in UAE"
+                description="Get in touch with Inspire to start your business journey in Dubai. Book a free consultation, submit an enquiry, or call us directly — we're ready to help."
+                keywords="contact business consultant Dubai, book consultation UAE, business setup enquiry, Inspire UAE contact, Al Ilham Management"
+                canonical="https://inspireuae.com/#/contact"
+            />
             <Navbar />
 
             <div className="contact-top-bg">
@@ -35,7 +42,7 @@ const Contact = () => {
 
                                 <div className="direct-btns">
                                     <a
-                                        href="https://wa.me/971505103821"
+                                        href="https://wa.me/971505203821"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn dark-btn"
@@ -45,7 +52,7 @@ const Contact = () => {
                                     </a>
 
                                     <a
-                                        href="tel:+971505103821"
+                                        href="tel:+971505203821"
                                         className="btn call-btn-white"
                                         style={{ textDecoration: 'none', display: 'inline-block' }}
                                     >
@@ -60,7 +67,7 @@ const Contact = () => {
 
                             {/* RIGHT IMAGE */}
                             <div className="direct-contact-image">
-                                <img src={contactDirectImg} alt="Contact" />
+                                <img src={contactDirectImg} alt="Inspire business consultants ready to speak with you" />
                             </div>
 
                         </div>

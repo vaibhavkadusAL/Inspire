@@ -36,7 +36,7 @@ const Navbar = () => {
 
           <div className="nav-actions mobile-only">
             <a
-              href="https://wa.me/971505103821"
+              href="https://wa.me/971505203821"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary w-100"
@@ -47,7 +47,7 @@ const Navbar = () => {
 
         <div className="nav-actions desktop-only">
           <a
-            href="https://wa.me/971505103821"
+            href="https://wa.me/971505203821"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"

@@ -39,7 +39,7 @@ const Footer = () => {
               <h4>Contact Us</h4>
               <ul className="contact-info">
                 <li><span className="icon">✉️</span> <a href="mailto:Info@alilhammanagement.com" style={{color: 'inherit', textDecoration: 'none'}}>Info@alilhammanagement.com</a></li>
-                <li><span className="icon">📞</span> +971505103821</li>
+                <li><span className="icon">📞</span> <a href="tel:+971505203821" style={{color: 'inherit', textDecoration: 'none'}}>+971505203821</a></li>
                 <li><span className="icon">📍</span> Business Bay, Dubai,<br />United Arab Emirates</li>
               </ul>
             </div>
@@ -50,7 +50,7 @@ const Footer = () => {
           <p>Copyright © 2026 Inspire. All Rights Reserved.</p>
           <div className="social-links">
             <a
-              href="https://wa.me/971505103821"
+              href="https://wa.me/971505203821"
               target="_blank"
               rel="noopener noreferrer"
               title="WhatsApp"

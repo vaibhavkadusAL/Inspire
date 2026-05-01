@@ -18,7 +18,7 @@ const ContactSection = () => {
 
                     {/* LEFT IMAGE */}
                     <div className="contact-image">
-                        <img src={contactImg} alt="Team Meeting" />
+                        <img src={contactImg} alt="Inspire team meeting with clients to discuss business setup in UAE" />
                     </div>
 
                     {/* RIGHT FORM */}

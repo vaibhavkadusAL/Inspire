@@ -4,6 +4,7 @@ import Footer from '../components/layout/Footer';
 import CtaSection from '../components/sections/CtaSection';
 import ProcessSection from '../components/sections/ProcessSection';
 import PartnersSection from '../components/sections/PartnersSection';
+import SEO from '../components/seo/SEO';
 import './Services.css';
 
 // Images
@@ -62,6 +63,12 @@ const Services = () => {
 
     return (
         <div className="services-page">
+            <SEO
+                title="Business Setup Services in UAE | Inspire"
+                description="Explore Inspire's full range of business services in Dubai and the UAE: company formation, government services, funding, project management, marketing and events."
+                keywords="business setup Dubai, free zone company UAE, government PRO services, SME funding UAE, marketing events Dubai, company formation Abu Dhabi"
+                canonical="https://inspireuae.com/#/services"
+            />
             <Navbar />
 
             {/* HEADER */}
@@ -115,7 +122,7 @@ const Services = () => {
 
                             {/* RIGHT IMAGE */}
                             <div className="tab-image-side">
-                                <img src={mainSetupImage} alt="Service" />
+                                <img src={mainSetupImage} alt="Business professionals in Dubai discussing company setup options" />
                             </div>
                         </div>
 
@@ -123,7 +130,7 @@ const Services = () => {
                         <div className="overlay-cards">
                             {serviceCards.map((card, index) => (
                                 <div className="overlay-card" key={index}>
-                                    <img src={card.icon} alt="" />
+                                    <img src={card.icon} alt={card.title} />
                                     <p>{card.title}</p>
                                 </div>
                             ))}
