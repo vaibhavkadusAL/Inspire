@@ -67,7 +67,7 @@ const Services = () => {
                 title="Business Setup Services in UAE | Inspire"
                 description="Explore Inspire's full range of business services in Dubai and the UAE: company formation, government services, funding, project management, marketing and events."
                 keywords="business setup Dubai, free zone company UAE, government PRO services, SME funding UAE, marketing events Dubai, company formation Abu Dhabi"
-                canonical="https://inspireuae.com/#/services"
+                canonical="https://www.alilhammanagement.com/#/services"
             />
             <Navbar />
 

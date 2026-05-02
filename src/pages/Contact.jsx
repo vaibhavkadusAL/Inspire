@@ -13,7 +13,7 @@ const Contact = () => {
                 title="Contact Inspire | Book a Business Consultation in UAE"
                 description="Get in touch with Inspire to start your business journey in Dubai. Book a free consultation, submit an enquiry, or call us directly — we're ready to help."
                 keywords="contact business consultant Dubai, book consultation UAE, business setup enquiry, Inspire UAE contact, Al Ilham Management"
-                canonical="https://inspireuae.com/#/contact"
+                canonical="https://www.alilhammanagement.com/#/contact"
             />
             <Navbar />
 
@@ -42,7 +42,7 @@ const Contact = () => {
 
                                 <div className="direct-btns">
                                     <a
-                                        href="https://wa.me/971505203821"
+                                        href="https://wa.me/971505103821"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn dark-btn"
@@ -52,11 +52,11 @@ const Contact = () => {
                                     </a>
 
                                     <a
-                                        href="tel:+971505203821"
+                                        href="tel:+971505103821"
                                         className="btn call-btn-white"
                                         style={{ textDecoration: 'none', display: 'inline-block' }}
                                     >
-                                        📞 Call Now: +971 50 520 3821
+                                        📞 Call Now: +971 50 510 3821
                                     </a>
                                 </div>
 

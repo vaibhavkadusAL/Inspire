@@ -26,11 +26,11 @@ const CtaSection = ({
               </a>
               {showSecondaryBtn && (
                 <a
-                  href="tel:+971505203821"
+                  href="tel:+971505103821"
                   className="btn btn-outline call-btn-white"
                   style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
                 >
-                  <span className="phone-icon">📞</span> Call Now: +971505203821
+                  <span className="phone-icon">📞</span> Call Now: +971505103821
                 </a>
               )}
             </div>
